@@ -1,4 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'
+
+// const history = useHistory()
+
+// const goHomeHandler = e => {
+//   history.push('/')
+// }
 
 const SavedList = props => (
   <div className="saved-list">
@@ -7,6 +14,7 @@ const SavedList = props => (
       <span className="saved-movie">{movie.title}</span>
     ))}
     <div className="home-button">Home</div>
+    {/* <button onClick={goHomeHandler} className="home-button">Home</button> */}
   </div>
 );
 
